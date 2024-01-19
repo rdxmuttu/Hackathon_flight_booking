@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card-container">
+    <ng-container *ngIf="flights.length === 0">
+      <div class="card">
+        <div class="card-body">
+          <p class="warning-message">
+            <!-- <strong>No flights available from {{ criteria.airport_from }} to {{ criteria.airport_to }} on {{ criteria.flight_date }} for {{ criteria.flight_class }} class</strong> -->
+          </p>
+        </div>
+      </div>
+    </ng-container>
+
+    <div class="flight-card" *ngFor="let flight of flights">
+      <div class="flight-card-content">
+        <div class="flight-details">
+          <h3><strong>Airline Code: {{ flight.airline_code }}</strong></h3>
+          <p><strong>Airline Name: {{ flight.airline_name }}</strong></p>
+          <p><strong>Flight Duration: {{ flight.flight_duration }}</strong></p>
+        </div>
+
+        <!-- <div class="airline-logo">
+          Add your airline logo here using the flight.airline_code or flight.airline_name
+          <img src="your-airline-logo-url-here" alt="{{ flight.airline_name }} Logo" width="60" height="50">
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

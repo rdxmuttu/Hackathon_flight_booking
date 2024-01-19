@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="card-container">
+      <ng-container *ngIf="departingFlights.length === 0">
+        <div class="card">
+          <div class="card-body">
+            <p class="warning-message">
+              <strong>No flights available</strong>
+            </p>
+          </div>
+        </div>
+      </ng-container>
+  
+      <!-- Departing Flight Details -->
+      <div class="flight-card" *ngFor="let flight of departingFlights">
+        <div class="flight-card-content">
+          <div class="flight-details">
+            <h3><strong>Departing Flight</strong></h3>
+            <p><strong>Airline Code: {{ flight.airlineCode  }}</strong></p>
+            <p><strong>Airline Name: {{ flight.airlineName }}</strong></p>
+            <p><strong>Flight Duration: {{ flight.totalDuration }}</strong></p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Returning Flight Details -->
+      <div class="flight-card" *ngFor="let flight of returnFlights">
+        <div class="flight-card-content">
+          <div class="flight-details">
+            <h3><strong>Returning Flight</strong></h3>
+            <p><strong>Airline Code: {{ flight.airlineCode  }}</strong></p>
+            <p><strong>Airline Name: {{ flight.airlineName }}</strong></p>
+            <p><strong>Flight Duration: {{ flight.totalDuration }}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

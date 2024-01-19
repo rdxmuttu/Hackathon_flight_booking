@@ -1,0 +1,173 @@
+.container {
+
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+    padding: 20px;
+  
+  }
+  
+  .card{
+  
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    margin: 200px;
+  
+  }
+  
+  .card-container {
+  
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    justify-content: space-between;
+  
+    /* margin: 250px; */
+  
+  }
+  
+   
+  
+  .flight-card {
+  
+    width: 48%;
+  
+    background-color: #f1efef;
+  
+    border: 2px solid hsl(0, 12%, 93%);
+  
+    border-radius: 10px;
+  
+    box-shadow: 6px 4px 12px rgba(23, 23, 23, 0.1);
+  
+    box-shadow: 6px 6px 6px rgba(7, 7, 7, 0.1);
+  
+    margin-bottom: 20px;
+  
+    overflow: hidden;
+  
+    transition: transform 0.2s ease-in-out;
+  
+  }
+  
+  /* Add padding to the custom input fields */
+  
+  .custom-input {
+  
+    padding: 30px; /* Adjust the value to control the spacing */
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .flight-card:hover {
+  
+    transform: scale(1.02); /* Add a slight hover effect */
+  
+  }
+  
+   
+  
+  .flight-card-content {
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    padding: 20px;
+  
+    align-items: center;
+  
+  }
+  
+   
+  
+  .flight-details {
+  
+    flex-grow: 1;
+  
+  }
+  
+   
+  
+  .flight-details h3 {
+  
+    font-size: 20px;
+  
+    margin: 0 0 10px;
+  
+  }
+  
+   
+  
+  .flight-details p {
+  
+    margin: 0;
+  
+    font-size: 16px;
+  
+  }
+  
+   
+  
+  .airline-logo {
+  
+    width: 30%; /* Adjust logo width as needed */
+  
+    padding: 10px;
+  
+  }
+  
+  /* img {
+  
+    border-radius: 7px;
+  
+    box-shadow: 0 6px 6px rgba(197, 21, 21, 0.1);
+  
+  } */
+  
+  .airline-logo img {
+  
+    max-height: 100px; /* Adjust logo height as needed */
+  
+    max-width: 100%;
+  
+    border-radius: 10px;
+  
+  }
+  
+  /* flight-list.component.css or your global CSS file */
+  
+  .warning-message {
+  
+    color: #ff0000; /* Red color for warning */
+  
+    font-weight: bold; /* Make the text bold */
+  
+    /* Add any other styles you want for the warning message */
+  
+  }
+  
+  .scrollable-input {
+  
+    width: 100%;             /* Set the width to 100% of the parent container */
+  
+    white-space: nowrap;     /* Prevent text from wrapping to the next line */
+  
+    overflow-x: auto;        /* Add horizontal scroll when the text overflows */
+  
+    font-weight: bold;       /* Apply the bold font style */
+  
+  }
+  
+   
+  
+   
